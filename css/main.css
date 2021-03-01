@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: '';
+    /* margin-bottom: -500px; */
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/bg1.png);
+    /* background-attachment: fixed; */
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    body::before {
+      margin-top: 85px;
+      margin-right: -45px;
+      opacity: 0.4;
+    }
+  }
+
+  .custom-nav .navbar-brand img {
+    width: 45px;
+    height: 45px;
+    margin-top: -7px;
+  }
+
+  .custom-nav .navbar-brand span {
+    color: #2E4D9B;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-left: 0.4em;
+  }
+
+  .custom-nav #navbarNav .navbar-nav .nav-item .dropdown-menu:hover {
+    color: white;
+  }
+
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    color: #2E4D9B;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 2.4em;
+    -webkit-transition: .3s color ease;
+    transition: .3s color ease;
+  }
+
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: #6BCEDA;
+  }
+
+  @media screen and (max-width: 992px) {
+    .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+      margin-right: 1.6em;
+    }
+    .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+      color: #6BCEDA;
+    }
+  }
+
+  .custom-nav #navbarNav .navbar-nav .nav-item .contact-button {
+    background-color: #bebebe;
+    color: #2E4D9B;
+    text-align: center;
+    border-radius: 2em;
+    border: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-left: 5em;
+  }
+
+  .custom-nav #navbarNav .navbar-nav .nav-item .contact-button:hover {
+    color: #e6e6e6;
+    background-color: #2E4D9B;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .custom-nav #navbarNav .navbar-nav .nav-item .contact-button {
+      margin-left: 1.4em;
+    }
+    .custom-nav #navbarNav .navbar-nav .nav-item .contact-button:hover {
+      color: #6BCEDA;
+      background-color: white;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .custom-nav {
+      margin-top: -1em;
+    }
+  }
+
+  .custom-section {
+    margin-top: 10em;
+  }
+
+  .custom-section h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #2C2A55;
+    white-space: nowrap;
+    line-height: 1;
+  }
+  
+  .custom-section h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #6578C4;
+    white-space: nowrap;
+    line-height: 1;
+  }
+  
+  .custom-section p {
+    font-size: 1rem;
+    color: #212529;
+    margin-top: 2em;
+  }
+  
+  .custom-section a {
+    margin-top: 2.2em;
+    display: inline-block;
+    color: white;
+    background-color: #2E4D9B;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-weight: 500;
+    margin-left: 100px;
+  }
+  
+  .custom-section a:hover {
+    color: #2E4D9B;
+    border: 1px solid #2E4D9B;
+    font-weight: 500;
+    background-color: transparent;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .custom-section {
+      margin-top: 3em;
+      text-align: center;
+    }
+    .custom-section h2, .custom-section h3, .custom-section p {
+      text-shadow: 1px 1px 1px rgba(33, 37, 41, 0.3);
+    }
+    .custom-section h3 {
+      color: #383f45;
+    }
+    .custom-section a {
+      margin-left: -5px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .custom-section h2 {
+      font-size: 3rem;
+    }
+  }

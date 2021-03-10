@@ -34,16 +34,16 @@ require_once("./conf.php");
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link slide-scroll" href="#home">Home</a>
+                  <a class="nav-link slide-scroll" href="index.php">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link slide-scroll" href="#about">About Us</a>
+                  <a class="nav-link slide-scroll" href="#about">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link slide-scroll" href="#news">News</a>
+                    <a class="nav-link slide-scroll" href="#berita">Berita</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link btn-primary contact-button" href="#">Contact Us</a>
+                  <a class="nav-link btn-primary contact-button" href="#">Hubungi Kami</a>
                 </li>
               </ul>
             </div>
@@ -52,15 +52,47 @@ require_once("./conf.php");
       <!-- End NAVBAR -->
 
       <!-- Upper Content -->
-      <div class="container">
-        <div class="row custom-section">
-          <!-- <div class="col-12 col-lg-4">
-            <h2 class="animate__animated animate__fadeInUp">Hella Fellas!!</h2>
-            <h3 class="animate__animated animate__fadeIn animate__delay-1s">Selamat datang di Rumah Sehat</h3>
-            <p class="animate__animated animate__fadeIn animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis voluptatum commodi possimus consectetur nisi exercitationem soluta suscipit, similique porro?</p>
-            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="#explore">Check Up Now</a>
-          </div> -->
+      <div class="container banner animate__animated animate__fadeIn animate__delay-1s">
+      <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
+       
       </div><br>
       <!-- End Upper Content -->
 
@@ -69,18 +101,95 @@ require_once("./conf.php");
       <!-- PAGE FAKTA & MITOS / VAKSIN -->
 
       <div class="container-fluid bg-blue bg-waves">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-12 animation">
+              <h3>FAKTA & MITOS COVID 19</h3>
+              <p class="bg-dark border-title"></p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-8 animation">
+          <p style="margin-right: -300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
+          </div>
+        </div><br>
+      <div class="card animation">
+        <div class="card-body">
+          <div class="row">
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Mitos:</h5>
+                  Orang yang sudah pernah positif COVID-19 tidak akan terjangkit lagi<br>
+                  <h5 > Fakta: </h5> Antibodi yang terbentuk di dalam tubuh orang yang sudah sembuh dari COVID-19 hanya mampu mengurangi risiko terinfeksi kembali, sama halnya dengan pemberian vaksin.
+
+                </div>
+              <img src="img/icon/cov1.png" class="ml-3" alt="...">
+            </div>
+          </div>
+          </div>
+      </div><br><br>
+        
+      <div class="card animation">
+        <div class="card-body">
+          <div class="row">
+            <div class="media">
+              <img src="img/icon/jauh1.png" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">Mitos: </h5>
+                 Orang yang pernah terinfeksi COVID-19 tidak bisa sembuh
+                <h5>Fakta: </h5> Kebanyakan orang yang terkena COVID-19 bisa sembuh. Penanganan sedini mungkin adalah kunci keberhasilan perawatan COVID-19. Jika Anda terkena batuk, demam, dan sesak napas, segera cari bantuan medis lewat telepon terlebih dahulu.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br><br>
+
+      <div class="card animation">
+        <div class="card-body">
+          <div class="row">
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Mitos: </h5>
+                Infeksi COVID-19 pasti disertai dengan gejala berat
+                <h5>Fakta: </h5> Pengidap COVID-19 bisa saja merasa sehat dan tetap beraktivitas seperti biasa tanpa mengetahui ia sudah berstatus OTG (Orang Tanpa Gejala).
+
+                </div>
+              <img src="img/icon/sakit1.png" class="ml-3" alt="...">
+            </div>
+          </div>
+          </div>
+      </div><br><br>
+        
+      <div class="card animation">
+        <div class="card-body">
+          <div class="row">
+            <div class="media">
+              <img src="img/icon/wash2.png" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0">Mitos: </h5>
+                Lebih baik menggunakan hand sanitizer daripada mencuci tangan dengan sabun untuk menghilangkan virus Corona
+                <h5>Fakta: </h5> Bila tangan terlalu kotor atau berminyak, alkohol yang terkandung di dalam hand sanitizer tidak dapat bekerja dengan optimal untuk membunuh kuman, termasuk virus Corona. Mencuci tangan dengan air dan sabun selama minimal 20 detik lebih dianjurkan karena memang lebih ampuh untuk membersihkan tangan dari kuman
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br><br>
+      </div>
+      
 
         <!-- PAGE FAKTA & MITOS -->
-        <div class="container pt-5 pb-5">
+        <!-- <div class="container pt-5 pb-5">
           <div class="row">
             <div class="col-8 animation">
               <h3>FAKTA & MITOS COVID 19</h3>
               <p class="bg-dark border-title"></p>
-            </div>
+            </div> -->
             <!-- <div class="col-4 text-right animation">
               <a class="text-dark" href="fakta.php">LIHAT SELENGKAPNYA</a>
             </div> -->
-          </div>
+          <!-- </div>
           <div class="row">
             <div class="col-4 p-3 animation">
               <div class="card" style="width: 100%;">
@@ -91,7 +200,7 @@ require_once("./conf.php");
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- PAGE VAKSIN -->
         <!-- <div class="container pt-5 pb-5">
@@ -114,8 +223,8 @@ require_once("./conf.php");
               </div>
             </div>
           </div>
-        </div>
-      </div> -->
+        </div> -->
+      </div>
 
       <!-- PAGE FOOTER -->
       <div class="container-fluid bg-light shadow-lg">

@@ -34,16 +34,16 @@ require_once("./conf.php");
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link slide-scroll" href="#home">Home</a>
+                  <a class="nav-link slide-scroll" href="#home">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link slide-scroll" href="#about">About Us</a>
+                  <a class="nav-link slide-scroll" href="#about">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link slide-scroll" href="#news">News</a>
+                    <a class="nav-link slide-scroll" href="#berita">Berita</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link btn-primary contact-button" href="#">Contact Us</a>
+                  <a class="nav-link btn-primary contact-button" href="#">Hubungi Kami</a>
                 </li>
               </ul>
             </div>
@@ -58,7 +58,7 @@ require_once("./conf.php");
             <h2 class="animate__animated animate__fadeInUp">Hella Fellas!!</h2>
             <h3 class="animate__animated animate__fadeIn animate__delay-1s">Selamat datang di Rumah Sehat</h3>
             <p class="animate__animated animate__fadeIn animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis voluptatum commodi possimus consectetur nisi exercitationem soluta suscipit, similique porro?</p>
-            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="#explore">Check Up Now</a>
+            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="#explore">Periksa Sekarang!</a>
           </div>
         </div>
       </div><br>

@@ -10,6 +10,7 @@ body::before {
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
     background-image: url(../img/bg1.png);
+    opacity: 0.6;
     /* background-attachment: fixed; */
     background-position: top right;
     background-repeat: no-repeat;
@@ -212,26 +213,4 @@ body::before {
 
   .animation_start{
     opacity: 1;
-  }
-
-  .btn-fact{
-    margin-top: 2.2em;
-    display: inline-block;
-    color: white;
-    background-color: #2E4D9B;
-    border-radius: 2em;
-    padding: 0.5em 2em;
-    text-decoration: none;
-    border: 1px solid transparent;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-    font-weight: 500;
-    margin-left: 300px;
-  }
-
-  .btn-fact:hover {
-    color: #2E4D9B;
-    border: 1px solid #2E4D9B;
-    font-weight: 500;
-    background-color: transparent;
   }

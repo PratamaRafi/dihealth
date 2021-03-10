@@ -11,7 +11,7 @@ require_once("./conf.php");
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fakta.css">
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -54,154 +54,70 @@ require_once("./conf.php");
       <!-- Upper Content -->
       <div class="container">
         <div class="row custom-section">
-          <div class="col-12 col-lg-4">
+          <!-- <div class="col-12 col-lg-4">
             <h2 class="animate__animated animate__fadeInUp">Hella Fellas!!</h2>
             <h3 class="animate__animated animate__fadeIn animate__delay-1s">Selamat datang di Rumah Sehat</h3>
             <p class="animate__animated animate__fadeIn animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis voluptatum commodi possimus consectetur nisi exercitationem soluta suscipit, similique porro?</p>
             <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="#explore">Check Up Now</a>
-          </div>
+          </div> -->
         </div>
       </div><br>
       <!-- End Upper Content -->
 
-      <div class="container p-5">
-        <div class="row p-lg-2 pt-lg-5 pb-lg-3">
-            <div class="col text-center pt-5 pb-0 animation">
-              <h3>DATA COVID 19 - INDONESIA</h3>
-              <p><?= redate(date('Y-m-d')) . ", PUKUL " . date('H.i') . " WIB";?></p>
-            </div>
-        </div>
-        <div class="row pb-5">
-          <div class="col pb-5 pt-5">
-            <div class="row">
-              <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_positif"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
-                  <small>TOTAL PASIEN POSITIF</small>
-                </div>
-              </div>
-              <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_sembuh"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
-                  <small>TOTAL PASIEN SEMBUH</small>
-                </div>
-              </div>
-              <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_meninggal"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
-                  <small>TOTAL PASIEN MENINGGAL</small>
-                </div>
-              </div>
-              <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_terkonfirmasi">-</h2>
-                  <small>TOTAL PASIEN TERKONFIRMASI</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <!-- PAGE FAKTA & MITOS / VAKSIN -->
 
       <div class="container-fluid bg-blue bg-waves">
 
-        <div class="row">
-        <div class="container-fluid bg-blue p-5 pr-0 pl-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 pt-5 pb-5 text-left mt-4 animation">
-              <h3 class="mt-2">ANDA SEDANG SAKIT RINGAN? YUK CEK!</h3>
-            </div>
-            <div class="col-4 pt-5 pb-5 text-right animation">
-              <a class="btn btn-primary btn-custom mt-4" href="#explore">CEK SEKARANG</a>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-
-        
+        <!-- PAGE FAKTA & MITOS -->
         <div class="container pt-5 pb-5">
           <div class="row">
             <div class="col-8 animation">
               <h3>FAKTA & MITOS COVID 19</h3>
               <p class="bg-dark border-title"></p>
             </div>
-
-            <div class="col-4 animation">
-              <h3>DIVAKSIN YUK!</h3>
-              <p class="bg-dark border-title"></p>
-            </div>
-
             <!-- <div class="col-4 text-right animation">
               <a class="text-dark" href="fakta.php">LIHAT SELENGKAPNYA</a>
             </div> -->
           </div>
-          <div class="row ">
-          <!-- PAGE FAKTA & MITOS -->
-            <div class="col-6 p-3 animation">
-              <div class="card" style="width: 100%;">
-                <img src="img/fact1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="fakta.php" class="btn btn-fact">Selengkapnya</a>
-                </div>
-              </div>
-            </div>
-            <!-- PAGE VAKSIN -->
-            <div class="col-6 p-3 animation">
-              <div class="card" style="width: 100%;">
-                <img src="img/vac2.jpg" class="card-img-top" alt="..." style="height: 343px;">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="vaksin.php" class="btn btn-fact">Selengkapnya</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-
-        
-
-        
-        <div class="container pt-5 pb-5">
           <div class="row">
-            <!-- <div class="col-8 animation">
-              <h3>DIVAKSIN YUK!</h3>
-              <p class="bg-dark border-title"></p>
-            </div> -->
-            <!-- <div class="col-4 text-right animation">
-              <a class="text-dark" href="#">LIHAT SELENGKAPNYA</a>
-            </div> -->
-          </div>
-          <div class="row">
-            <!-- <div class="col-4 p-3 animation">
+            <div class="col-4 p-3 animation">
               <div class="card" style="width: 100%;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
-            </div> -->
-          </div>
-        </>
-      </div>
-
-      <!-- PAGE FOOTER -->
-      <!-- <div class="container-fluid bg-blue p-5 pr-0 pl-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 pt-5 pb-5 text-left mt-4 animation">
-              <h3 class="mt-2">ANDA SEDANG SAKIT RINGAN? YUK CEK!</h3>
             </div>
-            <div class="col-4 pt-5 pb-5 text-right animation">
-              <a class="btn btn-primary btn-custom mt-4" href="#explore">CEK SEKARANG</a>
+          </div>
+        </div>
+
+        <!-- PAGE VAKSIN -->
+        <!-- <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="col-8 animation">
+              <h3>DIVAKSIN YUK!</h3>
+              <p class="bg-dark border-title"></p>
+            </div>
+            <div class="col-4 text-right animation">
+              <a class="text-dark" href="#">LIHAT SELENGKAPNYA</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 p-3 animation">
+              <div class="card" style="width: 100%;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div> -->
+
+      <!-- PAGE FOOTER -->
       <div class="container-fluid bg-light shadow-lg">
         <div class="container pt-3">
           <div class="row">
@@ -229,15 +145,7 @@ require_once("./conf.php");
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
     <script>
-      //API COVID
-      $.getJSON("http://localhost/dinacom/dihealth/covidapi.php",
-        function (data, textStatus, jqXHR) {
-          $('#pasien_terkonfirmasi').html(numberWithCommas(data[0].confirmed));
-          $('#pasien_sembuh').html(numberWithCommas(data[0].recovered));
-          $('#pasien_meninggal').html(numberWithCommas(data[0].deaths));
-          $('#pasien_positif').html(numberWithCommas(data[0].confirmed - (data[0].deaths + data[0].recovered)));
-        }
-      );
+    
 
       //Number Format
       function numberWithCommas(x){

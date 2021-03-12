@@ -75,7 +75,7 @@ require_once("./conf.php");
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+            <img src="img/banner8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
@@ -109,8 +109,8 @@ require_once("./conf.php");
             </div>
         </div>
         <div class="row">
-          <div class="col-8 animation">
-          <p style="margin-right: -300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
+          <div class="col-12 animation">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
           </div>
         </div><br>
       <div class="card animation">

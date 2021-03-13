@@ -21,39 +21,14 @@ require_once("./conf.php");
     <link rel="icon" href="img/1.png">
   </head>
   <body>
-    <!-- NAVBAR -->
-      <div class="container my-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent animate__animated animate__fadeInDown">
-            <a class="navbar-brand" href="#home">
-              <img src="img/1.png" alt="logo" style="width: 45px; height: 45px;">
-              <span>Rumah Sehat</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link slide-scroll" href="index.php">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link slide-scroll" href="#about">Tentang Kami</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link slide-scroll" href="#berita">Berita</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link btn-primary contact-button" href="#">Hubungi Kami</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </div>
+      <!-- NAVBAR -->
+      <?php include('navbar.php');?>
       <!-- End NAVBAR -->
 
       <!-- Upper Content -->
+      <div class="container p-4">
       <div class="container banner animate__animated animate__fadeIn animate__delay-1s">
-      <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -63,21 +38,21 @@ require_once("./conf.php");
           <div class="carousel-item active">
             <img src="img/banner2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5></h5>
               <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/banner3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5></h5>
               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/banner8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5></h5>
               <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
             </div>
           </div>
@@ -90,7 +65,7 @@ require_once("./conf.php");
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+        </div>
       </div>
        
       </div><br>
@@ -110,7 +85,7 @@ require_once("./conf.php");
         </div>
         <div class="row">
           <div class="col-12 animation">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
           </div>
         </div><br>
       <div class="card animation">

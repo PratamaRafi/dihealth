@@ -4,17 +4,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-body::before {
+body::before  {
     content: '';
+    width: 100%;
     /* margin-bottom: -500px; */
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
     background-image: url(../img/bg1.png);
-    opacity: 0.6;
     /* background-attachment: fixed; */
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 100vmax;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,8 +24,8 @@ body::before {
 
   @media screen and (max-width: 992px) {
     body::before {
-      margin-top: 85px;
-      margin-right: -45px;
+      margin-top: 0px;
+      margin-right: 0px;
       opacity: 0.4;
     }
   }

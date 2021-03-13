@@ -21,52 +21,26 @@ require_once("./conf.php");
     <link rel="icon" href="img/1.png">
   </head>
   <body>
-    <!-- NAVBAR -->
-      <div class="container my-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav bg-transparent animate__animated animate__fadeInDown">
-            <a class="navbar-brand" href="#home">
-              <img src="img/1.png" alt="logo" style="width: 45px; height: 45px;">
-              <span>Rumah Sehat</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link slide-scroll" href="#home">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link slide-scroll" href="#about">Tentang Kami</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link slide-scroll" href="#berita">Berita</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link btn-primary contact-button" href="#">Hubungi Kami</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </div>
+      <!-- NAVBAR -->
+      <?php include('navbar.php');?>
       <!-- End NAVBAR -->
 
       <!-- Upper Content -->
       <div class="container">
         <div class="row custom-section">
           <div class="col-12 col-lg-4">
-            <h2 class="animate__animated animate__fadeInUp">Hella Fellas!!</h2>
-            <h3 class="animate__animated animate__fadeIn animate__delay-1s">Selamat datang di Rumah Sehat</h3>
-            <p class="animate__animated animate__fadeIn animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum officiis voluptatum commodi possimus consectetur nisi exercitationem soluta suscipit, similique porro?</p>
-            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="#explore">Periksa Sekarang!</a>
+            <h2 class="animate__animated animate__fadeInUp">Rumah Sehat</h2>
+            <h3 class="animate__animated animate__fadeIn animate__delay-1s">Periksa kesehatan anda dengan mudah</h3>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Rumah sehat memeberikan anda kemudahan</p>
+            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="periksa">Periksa Sekarang!</a>
           </div>
         </div>
       </div><br>
       <!-- End Upper Content -->
 
-      <div class="container p-5">
-        <div class="row p-lg-2 pt-lg-5 pb-lg-3">
-            <div class="col text-center pt-5 pb-0 animation">
+      <div class="container p-5 mt-5">
+        <div class="row p-lg-2 pt-lg-5 pb-lg-3 mt-5">
+            <div class="col text-center pt-5 mt-5 pb-0 animation">
               <h3>DATA COVID 19 - INDONESIA</h3>
               <p><?= redate(date('Y-m-d')) . ", PUKUL " . date('H.i') . " WIB";?></p>
             </div>
@@ -77,7 +51,7 @@ require_once("./conf.php");
               <div class="col-3 p-1 animation">
                 <div class="bg-white shadow-sm p-3 rounded">
                   <h2 id="pasien_positif"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
-                  <small>TOTAL PASIEN POSITIF</small>
+                  <small>TOTAL KASUS AKTIF</small>
                 </div>
               </div>
               <div class="col-3 p-1 animation">
@@ -94,7 +68,7 @@ require_once("./conf.php");
               </div>
               <div class="col-3 p-1 animation">
                 <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_terkonfirmasi">-</h2>
+                <h2 id="pasien_terkonfirmasi"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
                   <small>TOTAL PASIEN TERKONFIRMASI</small>
                 </div>
               </div>
@@ -111,11 +85,11 @@ require_once("./conf.php");
         <div class="container-fluid bg-blue p-5 pr-0 pl-0">
         <div class="container">
           <div class="row">
-            <div class="col-8 pt-5 pb-5 text-left mt-4 animation">
+            <div class="col-8 pt-5 pb-5 text-left text-mobile-center mt-4 animation">
               <h3 class="mt-2">ANDA SEDANG SAKIT RINGAN? YUK CEK!</h3>
             </div>
-            <div class="col-4 pt-5 pb-5 text-right animation">
-              <a class="btn btn-primary btn-custom mt-4" href="#explore">CEK SEKARANG</a>
+            <div class="col-4 pt-5 pb-5 text-right text-mobile-center animation">
+              <a class="btn btn-primary btn-custom mt-4" href="periksa">CEK SEKARANG</a>
             </div>
           </div>
         </div>
@@ -125,38 +99,45 @@ require_once("./conf.php");
         
         <div class="container pt-5 pb-5">
           <div class="row">
-            <div class="col-8 animation">
-              <h3>FAKTA & MITOS COVID 19</h3>
-              <p class="bg-dark border-title"></p>
-            </div>
-
-            <div class="col-4 animation">
-              <h3>DIVAKSIN YUK!</h3>
-              <p class="bg-dark border-title"></p>
-            </div>
+        
 
             <!-- <div class="col-4 text-right animation">
               <a class="text-dark" href="fakta.php">LIHAT SELENGKAPNYA</a>
             </div> -->
           </div>
-          <div class="row ">
-          <!-- PAGE FAKTA & MITOS -->
-            <div class="col-6 p-3 animation">
-              <div class="card" style="width: 100%;">
-                <img src="img/fact1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="fakta.php" class="btn btn-fact">Selengkapnya</a>
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+              <div class="col-12 animation">
+                  <h3>FAKTA & MITOS COVID 19</h3>
+                  <p class="bg-dark border-title"></p>
+              </div>
+            <!-- PAGE FAKTA & MITOS -->
+                <div class="col-12 p-3 animation">
+                  <div class="card" style="width: 100%;">
+                    <img src="img/fact1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="fakta" class="btn btn-fact ml-0 float-right">Selengkapnya</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- PAGE VAKSIN -->
-            <div class="col-6 p-3 animation">
-              <div class="card" style="width: 100%;">
-                <img src="img/vac2.jpg" class="card-img-top" alt="..." style="height: 343px;">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="vaksin.php" class="btn btn-fact">Selengkapnya</a>
+            <div class="col-6 animation">
+              <div class="row">
+                <div class="col-12 animation mb-3">
+                  <h3>DIVAKSIN YUK!</h3>
+                  <p class="bg-dark border-title"></p>
+                </div>
+                <div class="col-12">
+                  <div class="card" style="width: 100%;">
+                  <img src="img/vac2.jpg" class="card-img-top" alt="..." style="height: 343px;">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="vaksin" class="btn btn-fact ml-0 float-right">Selengkapnya</a>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -230,7 +211,7 @@ require_once("./conf.php");
 
     <script>
       //API COVID
-      $.getJSON("http://localhost/dinacom/dihealth/covidapi.php",
+      $.getJSON("api.php",
         function (data, textStatus, jqXHR) {
           $('#pasien_terkonfirmasi').html(numberWithCommas(data[0].confirmed));
           $('#pasien_sembuh').html(numberWithCommas(data[0].recovered));

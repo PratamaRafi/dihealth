@@ -1,5 +1,8 @@
 <?php 
 require_once("./conf.php");
+if(!isset($_SESSION['login'])){
+  header('location:masuk');
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -55,7 +58,7 @@ require_once("./conf.php");
       <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 animation">
-              <h3>PERIKSA KESEHATAN ANDA</h3>
+              <h3>HALO <?=strtoupper($_SESSION['nama']);?>, PERIKSA KESEHATAN ANDA YUK!</h3>
               <p class="bg-dark border-title"></p>
             </div>
         </div>
@@ -122,7 +125,7 @@ require_once("./conf.php");
     var dataKeluhan = [];
 
     
-    $.getJSON("http://dihealth.dicampus.id/api.php?act=datakeluhan",
+    $.getJSON("<?= $baseurl; ?>api.php?act=datakeluhan",
         function (data, textStatus, jqXHR) {
             data.forEach(e => {
                 $('select').append(`<option value='${e.nama_keluhan}'>${e.nama_keluhan}</option>`);
@@ -173,7 +176,7 @@ require_once("./conf.php");
 
         $.ajax({
             type: "POST",
-            url: "http://dihealth.dicampus.id/api.php?act=datapenyakitcek",
+            url: "<?= $baseurl; ?>api.php?act=datapenyakitcek",
             data: datapost,
             success: function (response) {
                 console.log(response);

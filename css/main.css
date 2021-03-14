@@ -160,6 +160,9 @@ body::before {
     .custom-section a {
       margin-left: -5px;
     }
+    .ic{
+      display: none;
+    }
   }
   
   @media screen and (max-width: 400px) {

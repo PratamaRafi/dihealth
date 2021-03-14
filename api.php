@@ -1,5 +1,6 @@
 <?php
 require('conf.php');
+header("Access-Control-Allow-Origin: *");
 
 $db = new Database;
 
@@ -10,6 +11,16 @@ if(isset($_GET['act'])){
 }
 
 switch($act){
+	case 'login' : {
+		$data = $db->login($_POST['username'],$_POST['password']);
+		echo $data;
+		break;
+	}
+	case 'adduser' : {
+		$data = $db->adduser($_POST['username'],$_POST['password'],$_POST['nama'],$_POST['email']);
+		echo $data;
+		break;
+	}
 	case 'hapuspenyakit' : {
 		$keluhan = $_GET['id'];
 		$data = $db->hapuspenyakit($keluhan);

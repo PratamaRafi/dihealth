@@ -1,4 +1,6 @@
 <?php
+ob_start();
+session_start();
 date_default_timezone_set('Asia/Jakarta');
 function redate($date){
     $tahun = date('Y',strtotime($date));
@@ -9,6 +11,8 @@ function redate($date){
 
     echo $tgl . ' ' . $tgl_indo[$bulan] . ' ' . $tahun;
 }
+
+$baseurl = 'http://localhost/dihealth/';
 
 class Database {
     private $user = 'root';
@@ -118,4 +122,71 @@ class Database {
             return "failed";
         }
     }
+    public function adduser($username,$password,$nama,$email){
+        $username = $this->con->real_escape_string($username);
+        $password = password_hash($password,PASSWORD_DEFAULT);
+        $email = $this->con->real_escape_string($email);
+        $nama = $this->con->real_escape_string($nama);
+
+        if($this->cekuser($username) == 'success'){
+            return "failed";
+        }
+
+        $sql = "INSERT INTO tbl_user VALUES (0,'$nama','$email','$username','$password')";
+        $query = $this->con->query($sql);
+
+        if($query){
+            return "success";
+        }else{
+            return "failed";
+        }
+    }
+
+    public function login($username,$password){
+        if($this->cekuser($username) == 'success'){
+            if($this->cekuserpassword($username,$password) == 'success'){
+                $nama = $this->namauser($username);
+
+                $_SESSION['login'] = $username;
+                $_SESSION['nama'] = $nama;
+                return 'success';
+            }else{
+                return 'failed';
+            }
+        }else{
+            return 'failed';
+        }
+    }
+
+    public function cekuser($username){
+        $sql = "SELECT * FROM tbl_user WHERE username = '$username'";
+        $query = $this->con->query($sql);
+
+        if($query->num_rows == 1){
+            return "success";
+        }else{
+            return "failed";
+        }
+    }
+
+    public function cekuserpassword($username,$password){
+        $sql = "SELECT * FROM tbl_user WHERE username = '$username'";
+        $query = $this->con->query($sql);
+        $result = $query->fetch_array();
+
+        if(password_verify($password,$result['password'])){
+            return "success";
+        }else{
+            return "failed";
+        }
+    }
+
+    public function namauser($username){
+        $sql = "SELECT * FROM tbl_user WHERE username = '$username'";
+        $query = $this->con->query($sql);
+        $result = $query->fetch_array();
+
+        return $result['nama'];
+    }
+
 }

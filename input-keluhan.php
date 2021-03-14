@@ -145,7 +145,7 @@ require('conf.php');
 
         $.ajax({
             type: "POST",
-            url: "http://dihealth.dicampus.id/api.php?act=tambahpenyakit",
+            url: "<?= $baseurl; ?>api.php?act=tambahpenyakit",
             data: data,
             success: function (response) {
                 $('.save').html('Save');

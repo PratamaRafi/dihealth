@@ -50,7 +50,7 @@ require_once("./conf.php");
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/banner8.png" class="d-block w-100" alt="...">
+            <img src="img/Gejala Klinis.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
@@ -85,7 +85,7 @@ require_once("./conf.php");
         </div>
         <div class="row">
           <div class="col-12 animation">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
+            <p>Di zaman sekarang ini, sering sekali kita memperoleh informasi yang belum tentu benar, namun sudah menyebar dengan mudahnya di masyarakat. Jika informasi yang beredar itu salah, dapat menyesatkan orang lain dan memicu kesalahpahaman di masyarakat. Dalam mitos dan fakta COVID-19 ini, kami telah merangkum informasi-informasi yang beredar dan mencari tahu kebenarannya melalui sumber-sumber yang terpercaya.</p>
           </div>
         </div><br>
       <div class="card animation">

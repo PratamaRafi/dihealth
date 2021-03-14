@@ -2,6 +2,15 @@
 require_once("./conf.php");
 ?>
 <!doctype html>
+<!-- <a href="https://www.vectorstock.com/royalty-free-vector/coronavirus-vaccine-and-a-syringe-vector-30378984">Coronavirus vaccine and a syringe vector by ivan111183</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/time-to-vaccinate-concept-with-doctor-medical-vector-31626933">Vector image by VectorStock / vectorstock</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/printa-group-people-using-masker-preventing-vector-34925170">Vector image by VectorStock / vectorstock</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/vaccine-corona-viruses-covid19-19-pandemic-vector-34925184">Vector image by VectorStock / vectorstock</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/doctor-and-team-found-corona-virus-covid-19-vector-34925199">Doctor and team found corona virus covid-19 vector by vectorstock</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/covid19-19-vector-30690791">Vector image by VectorStock / onamastudio</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/check-your-body-temperature-vector-31058727">Check your body temperature vector by onamastudio</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/coronavirus-vaccine-and-a-syringe-vector-30378984">Vector image by VectorStock / ivan111183</a>
+<a href="https://www.vectorstock.com/royalty-free-vector/coronavirus-vaccine-and-a-syringe-vector-30378984" target="_blank">Vector image by VectorStock / ivan111183</a>-->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -30,12 +39,15 @@ require_once("./conf.php");
         <div class="row custom-section">
           <div class="col-12 col-lg-4">
             <h2 class="animate__animated animate__fadeInUp">Rumah Sehat</h2>
-            <h3 class="animate__animated animate__fadeIn animate__delay-1s">Periksa kesehatan anda dengan mudah</h3>
-            <p class="animate__animated animate__fadeIn animate__delay-2s">Rumah sehat memeberikan anda kemudahan</p>
-            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="periksa">Periksa Sekarang!</a>
+            <h3 class="animate__animated animate__fadeIn animate__delay-1s">Mengatasi keluhan penyakit ringan Anda dengan mudah.
+            </h3>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Periksakan keluhan-keluhan penyakit ringan Anda untuk mendapatkan solusi terbaik dengan saran swamedikasi bersama Rumah Sehat.
+            <p class="animate__animated animate__fadeIn animate__delay-2s">
+            Anda mengalami keluhan penyakit ringan? Yuk, cari tahu cara mengatasinya!</p>
+            <a class="slide-scroll animate__animated animate__fadeInUp animate__delay-3s" href="periksa" style="margin-top: 10px;">Periksa Sekarang!</a>
           </div>
         </div>
-      </div><br>
+      </div>
       <!-- End Upper Content -->
 
       <div class="container p-5 mt-5">
@@ -49,26 +61,28 @@ require_once("./conf.php");
           <div class="col pb-5 pt-5">
             <div class="row">
               <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_positif"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
+                <div class="bg-white shadow-sm p-3 rounded info">
+                  <h2 id="pasien_positif"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span><img src="img/icon/cov1.png" alt=""></h2>
                   <small>TOTAL KASUS AKTIF</small>
                 </div>
               </div>
               <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_sembuh"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
+                <div class="bg-white shadow-sm p-3 rounded info">
+                  <h2 id="pasien_sembuh"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span><img src="img/icon/sembuh1.png" alt=""></h2>
                   <small>TOTAL PASIEN SEMBUH</small>
                 </div>
               </div>
               <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                  <h2 id="pasien_meninggal"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
+                <div class="bg-white shadow-sm p-3 rounded info">
+                <!-- <a href="http://www.freepik.com">Designed by Freepik</a> -->
+                <!-- <a href="https://www.vectorstock.com/royalty-free-vector/a-coronavirus-pandemic-vector-30140079" target="_blank">Vector image by VectorStock / Iashnova</a> -->
+                  <h2 id="pasien_meninggal"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span><img src="img/icon/mati1.png" alt=""></h2>
                   <small>TOTAL PASIEN MENINGGAL</small>
                 </div>
               </div>
               <div class="col-3 p-1 animation">
-                <div class="bg-white shadow-sm p-3 rounded">
-                <h2 id="pasien_terkonfirmasi"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span></h2>
+                <div class="bg-white shadow-sm p-3 rounded info">
+                <h2 id="pasien_terkonfirmasi"><span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span><img src="img/icon/ceklis.png" alt=""></h2>
                   <small>TOTAL PASIEN TERKONFIRMASI</small>
                 </div>
               </div>
@@ -102,7 +116,7 @@ require_once("./conf.php");
         
 
             <!-- <div class="col-4 text-right animation">
-              <a class="text-dark" href="fakta.php">LIHAT SELENGKAPNYA</a>
+              <a class="text-dark" href="fakta.php">LIHAT SELENGKAPNYAa href="https://www.vectorstock.com/royalty-free-vector/printa-group-people-using-masker-preventing-vector-34925170" target="_blank">Vector image by VectorStock / vectorstock</a></a>
             </div> -->
           </div>
           <div class="row">
@@ -114,10 +128,10 @@ require_once("./conf.php");
               </div>
             <!-- PAGE FAKTA & MITOS -->
                 <div class="col-12 p-3 animation">
-                  <div class="card" style="width: 100%;">
-                    <img src="img/fact1.jpg" class="card-img-top" alt="...">
+                  <div class="card" style="width: 100%; border-radius: 2em !important;">
+                    <img src="img/fact1.jpg" class="card-img-top" alt="..." style="border-radius: 2em !important;">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Sering menerima informasi yang kurang meyakinkan mengenai COVID-19? Yuk, cek kebenaran informasinya di sini!</p>
                       <a href="fakta" class="btn btn-fact ml-0 float-right">Selengkapnya</a>
                     </div>
                   </div>
@@ -131,10 +145,11 @@ require_once("./conf.php");
                   <p class="bg-dark border-title"></p>
                 </div>
                 <div class="col-12">
-                  <div class="card" style="width: 100%;">
-                  <img src="img/vac2.jpg" class="card-img-top" alt="..." style="height: 343px;">
+                  <div class="card" style="width: 100%; border-radius: 2em !important;">
+                  <img src="img/vac3.png" class="card-img-top" alt="..." style="height: 343px; border-radius: 2em !important;">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Sudah tahu tahapan vaksinasi di Indonesia dan bagaimana cara mendapatkannya? Segera cek selengkapnya di sini.</p>
+                    <a href="https://www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" class="href"></a>
                     <a href="vaksin" class="btn btn-fact ml-0 float-right">Selengkapnya</a>
                   </div>
                 </div>
@@ -146,43 +161,7 @@ require_once("./conf.php");
 
         
 
-        
-        <div class="container pt-5 pb-5">
-          <div class="row">
-            <!-- <div class="col-8 animation">
-              <h3>DIVAKSIN YUK!</h3>
-              <p class="bg-dark border-title"></p>
-            </div> -->
-            <!-- <div class="col-4 text-right animation">
-              <a class="text-dark" href="#">LIHAT SELENGKAPNYA</a>
-            </div> -->
-          </div>
-          <div class="row">
-            <!-- <div class="col-4 p-3 animation">
-              <div class="card" style="width: 100%;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </>
-      </div>
-
-      <!-- PAGE FOOTER -->
-      <!-- <div class="container-fluid bg-blue p-5 pr-0 pl-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-8 pt-5 pb-5 text-left mt-4 animation">
-              <h3 class="mt-2">ANDA SEDANG SAKIT RINGAN? YUK CEK!</h3>
-            </div>
-            <div class="col-4 pt-5 pb-5 text-right animation">
-              <a class="btn btn-primary btn-custom mt-4" href="#explore">CEK SEKARANG</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
+<!-- FOOTER -->
       <div class="container-fluid bg-light shadow-lg">
         <div class="container pt-3">
           <div class="row">

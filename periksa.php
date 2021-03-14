@@ -61,7 +61,7 @@ require_once("./conf.php");
         </div>
         <div class="row">
           <div class="col-12 animation" style="text-align: justify !important; text-justify: inter-word;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo odit ipsam aliquid reprehenderit ratione. Illum incidunt, similique magnam impedit quisquam ducimus placeat cumque itaque quis nemo corporis quia doloribus eligendi nesciunt vero mollitia tempora aliquam quo nulla dolor natus fugit saepe consequatur id. Praesentium non possimus itaque illum officiis!</p>
+            <p>Pilihlah keluhan yang Anda alami di kotak ini. Kami akan menampilkan beberapa penyakit ringan yang memiliki keluhan seperti yang Anda pilih dengan menyertai intervensi sederhana dan rekomendasi obat yang dapat Anda dibeli di apotek.</p>
           </div>
         </div>
         <div class="card animation mt-3">
